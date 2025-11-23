@@ -8,7 +8,6 @@
     if (!mountainSection) return;
 
     let ticking = false;
-    let lastScrollY = window.scrollY;
 
     // Throttled scroll handler for performance
     function updateMountainPosition() {
