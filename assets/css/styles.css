@@ -145,6 +145,27 @@ img {
   position: relative;
 }
 
+.mountain-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.mountain-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 120%;
+  max-width: none;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.8;
+}
+
 .home__parallax {
   width: 100%;
   height: 100%;
@@ -189,14 +210,14 @@ img {
 .home__title {
   top: 32%;
   font-size: var(--biggest-font-size);
-  z-index: var(--z-normal);
+  z-index: var(--z-fixed);
 }
 
 .home__subtitle {
   top: 44%;
   font-size: var(--h2-font-size);
   font-weight: bold;
-  z-index: var(--z-tooltip);
+  z-index: var(--z-fixed);
 }
 
 .home__scroll {
@@ -281,6 +302,10 @@ img {
   }
   .home__subtitle {
     top: 50%;
+  }
+  .mountain-image {
+    width: 150%;
+    bottom: -5%;
   }
   .section {
     -webkit-box-orient: horizontal;
