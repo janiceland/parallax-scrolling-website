@@ -13,7 +13,7 @@
     width: 120%;
     max-width: none;
     pointer-events: none;
-    z-index: 1;
+    z-index: var(--z-normal);
     will-change: transform;
 }
 
