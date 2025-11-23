@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mountainGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5364;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2027;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#203a43;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2027;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2027;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background mountain (furthest) -->
+  <polygon points="0,400 0,200 150,180 300,220 450,160 600,200 750,140 800,160 800,400" 
+           fill="url(#mountainGradient3)" opacity="0.6"/>
+  
+  <!-- Middle mountain -->
+  <polygon points="0,400 0,280 100,240 200,260 350,200 500,240 650,180 800,220 800,400" 
+           fill="url(#mountainGradient2)" opacity="0.8"/>
+  
+  <!-- Front mountain (closest) -->
+  <polygon points="0,400 0,320 150,280 300,300 450,240 600,280 750,260 800,280 800,400" 
+           fill="url(#mountainGradient1)"/>
+</svg>
