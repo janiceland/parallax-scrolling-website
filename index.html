@@ -15,15 +15,14 @@
       rel="stylesheet"
     />
 
-    <!-- OVERRIDE: 讓預覽圖正常滿版顯示，不要被擠到右邊 -->
+    <!-- 讓首頁 hero 圖正常滿版顯示，而且不被 JS 亂動 -->
     <style>
-      .mountain-section {
+      .hero-section {
         position: relative;
         overflow: hidden;
       }
 
-      .mountain-image {
-        position: static !important;
+      .hero-image {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -64,7 +63,7 @@
     <main>
       <!-- ===== HOME / HERO =====-->
       <div class="home">
-        <!-- Parallax background layers -->
+        <!-- 原本的 parallax 背景層，保留沒關係 -->
         <div
           class="parallax home__parallax home__parallax-img1"
           data-rellax-speed="-9"
@@ -82,13 +81,13 @@
           data-rellax-speed="-3"
         ></div>
 
-        <!-- 主視覺圖片：使用專案根目錄的 preview.png -->
-        <div class="mountain-section">
+        <!-- 這裡改成自己的 hero 區塊，不再用 mountain-image/parallax class -->
+        <div class="hero-section">
+          <!-- preview.png 在專案根目錄，所以直接這樣寫 -->
           <img
             src="preview.png"
-            class="parallax mountain-image"
-            alt="Mountains"
-            data-rellax-speed="-4"
+            alt="Mountain preview"
+            class="hero-image"
           />
         </div>
 
@@ -103,7 +102,46 @@
       </div>
 
       <!-- ===== SECTION =====-->
-      <section class="l-s
+      <section class="l-section" id="section">
+        <div class="section">
+          <div class="section__data">
+            <h2 class="section__title">Scaling mountains</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus, laboriosam. Esse ipsum culpa laboriosam, totam hic
+              quidem recusandae eos, numquam iusto aliquid expedita est sapiente
+              quaerat inventore voluptatem corporis aliquam.
+            </p>
+          </div>
+
+          <!-- 原本示意圖片 -->
+          <img
+            src="assets/img/imgm.jpg"
+            alt="Climber"
+            class="section__img"
+          />
+        </div>
+      </section>
+    </main>
+
+    <!-- RELLAX JS -->
+    <script src="assets/js/rellax.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- mountain-parallax.js 現在不再操作圖片，可以保留或刪掉都無妨；
+         如果你覺得穩一點，也可以先拿掉這一行。 -->
+    <!-- <script src="assets/js/mountain-parallax.js"></script> -->
+  </body>
+</html>
+
 
 
 
