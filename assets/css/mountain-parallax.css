@@ -20,18 +20,10 @@
     will-change: transform;
 }
 
-.mountain-section .text {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
 /* Mobile: Disable parallax effect */
 @media (max-width: 767px) {
     .mountain-image {
-        transform: translateX(-50%) translateY(0);
+        --mountain-offset: 0;
         width: 150%;
         opacity: 0.95;
     }

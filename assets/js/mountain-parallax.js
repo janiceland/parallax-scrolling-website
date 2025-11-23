@@ -47,7 +47,7 @@
         
         // Only apply parallax on wide screens
         if (!isWideScreen()) {
-            mountainImage.style.setProperty('--mountain-offset', '0');
+            mountainImage.style.setProperty('--mountain-offset', '0px');
             return;
         }
         
