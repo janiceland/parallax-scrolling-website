@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none" class="mountain-svg">
+  <defs>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5364;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2027;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background mountains -->
+  <path d="M0,400 L0,200 L200,100 L400,180 L600,80 L800,160 L1000,120 L1200,200 L1200,400 Z" 
+        fill="url(#mountainGradient)" opacity="0.7" class="mountain-layer mountain-back"/>
+  <!-- Middle mountains -->
+  <path d="M0,400 L0,250 L150,180 L300,220 L500,140 L700,200 L900,160 L1050,220 L1200,180 L1200,400 Z" 
+        fill="#1a3a4a" opacity="0.8" class="mountain-layer mountain-middle"/>
+  <!-- Front mountains -->
+  <path d="M0,400 L0,300 L100,250 L250,290 L400,220 L550,270 L700,240 L850,280 L1000,260 L1150,300 L1200,280 L1200,400 Z" 
+        fill="#0d2633" opacity="0.9" class="mountain-layer mountain-front"/>
+</svg>
