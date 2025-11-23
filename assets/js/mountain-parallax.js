@@ -23,7 +23,7 @@
                 func.apply(context, args);
                 lastExecTime = currentTime;
             } else {
-                timeoutId = setTimeout(function() {
+                timeoutId = setTimeout(() => {
                     func.apply(context, args);
                     lastExecTime = Date.now();
                 }, delay);

@@ -8,7 +8,7 @@
 .mountain-image {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) translateY(var(--mountain-offset, 0));
+    transform: translate3d(-50%, var(--mountain-offset, 0), 0);
     bottom: 0;
     width: 120%;
     max-width: none;
