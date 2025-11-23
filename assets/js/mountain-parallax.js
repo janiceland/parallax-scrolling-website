@@ -31,7 +31,7 @@
     // Calculate offset when section is in viewport
     if (rect.top < windowHeight && rect.bottom > 0) {
       const offset = (scrolled - sectionTop + windowHeight) * 0.3;
-      document.documentElement.style.setProperty('--mountain-offset', offset);
+      document.documentElement.style.setProperty('--mountain-offset', offset + 'px');
     }
   }
   
