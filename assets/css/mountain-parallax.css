@@ -1,3 +1,29 @@
+/* Mountain Parallax Section Styles */
+.mountain-section {
+    position: relative;
+    overflow: hidden;
+    min-height: 280px;
+}
+
+.mountain-image {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-50%, var(--mountain-offset, 0), 0);
+    bottom: 0;
+    width: 120%;
+    max-width: none;
+    pointer-events: none;
+    z-index: var(--z-normal);
+    will-change: transform;
+}
+
+/* Mobile: Disable parallax effect */
+@media (max-width: 767px) {
+    .mountain-image {
+        --mountain-offset: 0;
+        width: 150%;
+        opacity: 0.95;
+    }
 /* Mountain Parallax Styles */
 
 .mountain-section {
