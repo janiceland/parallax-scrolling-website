@@ -3,9 +3,6 @@
     position: relative;
     overflow: hidden;
     min-height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .mountain-image {
@@ -26,12 +23,5 @@
         --mountain-offset: 0;
         width: 150%;
         opacity: 0.95;
-    }
-}
-
-/* Desktop: Enable parallax effect */
-@media (min-width: 768px) {
-    .mountain-image {
-        transform: translateX(-50%) translateY(var(--mountain-offset, 0));
     }
 }
