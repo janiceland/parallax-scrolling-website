@@ -12,6 +12,19 @@
     <linearGradient id="mountainGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#0f2027;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="mountainGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#34495e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a5f7f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="mountainGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5a7a9e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6b8caf;stop-opacity:1" />
     </linearGradient>
   </defs>
   
@@ -26,4 +39,51 @@
   <!-- Front mountain (closest) -->
   <polygon points="0,400 0,320 150,280 300,300 450,240 600,280 750,260 800,280 800,400" 
            fill="url(#mountainGradient1)"/>
+  <path d="M0,400 L0,200 L300,100 L600,180 L900,120 L1200,220 L1200,400 Z" 
+        fill="url(#mountainGradient3)" opacity="0.6"/>
+  
+  <!-- Middle mountain -->
+  <path d="M0,400 L0,250 L200,150 L400,200 L700,130 L1000,210 L1200,160 L1200,400 Z" 
+        fill="url(#mountainGradient2)" opacity="0.8"/>
+  
+  <!-- Front mountain (closest) -->
+  <path d="M0,400 L0,300 L150,200 L350,260 L550,180 L800,250 L1050,200 L1200,280 L1200,400 Z" 
+        fill="url(#mountainGradient1)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M0,400 L0,200 L200,100 L400,180 L600,80 L800,160 L1000,120 L1200,200 L1200,400 Z" fill="url(#mountainGradient)" opacity="0.9"/>
+  <path d="M0,400 L0,250 L150,180 L350,240 L550,150 L750,220 L950,180 L1200,260 L1200,400 Z" fill="#34495E" opacity="0.7"/>
+  <path d="M0,400 L0,300 L100,260 L300,300 L500,240 L700,280 L900,260 L1200,320 L1200,400 Z" fill="#2C3E50" opacity="0.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="mountainGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a5568;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <polygon points="0,300 0,180 200,100 400,160 600,80 800,140 1000,100 1200,160 1200,300" fill="url(#mountainGrad)" opacity="0.9"/>
+  <polygon points="0,300 0,220 150,180 350,200 550,150 750,180 950,160 1150,200 1200,220 1200,300" fill="#2d3748" opacity="0.7"/>
+  <polygon points="0,300 0,250 100,230 300,240 500,210 700,230 900,220 1100,240 1200,250 1200,300" fill="#1a202c" opacity="0.8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" preserveAspectRatio="none" class="mountain-svg">
+  <defs>
+    <linearGradient id="mountainGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c5364;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f2027;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Background mountains -->
+  <path d="M0,400 L0,200 L200,100 L400,180 L600,80 L800,160 L1000,120 L1200,200 L1200,400 Z" 
+        fill="url(#mountainGradient)" opacity="0.7" class="mountain-layer mountain-back"/>
+  <!-- Middle mountains -->
+  <path d="M0,400 L0,250 L150,180 L300,220 L500,140 L700,200 L900,160 L1050,220 L1200,180 L1200,400 Z" 
+        fill="#1a3a4a" opacity="0.8" class="mountain-layer mountain-middle"/>
+  <!-- Front mountains -->
+  <path d="M0,400 L0,300 L100,250 L250,290 L400,220 L550,270 L700,240 L850,280 L1000,260 L1150,300 L1200,280 L1200,400 Z" 
+        fill="#0d2633" opacity="0.9" class="mountain-layer mountain-front"/>
 </svg>
