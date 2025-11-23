@@ -8,6 +8,14 @@
   align-items: center;
   justify-content: center;
   margin: 2rem 0;
+/* Mountain section styles and simple parallax variables */
+.mountain-section {
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mountain-image {
@@ -43,5 +51,28 @@
 @media screen and (min-width: 768px) {
   .mountain-section {
     min-height: 400px;
+  left: 50%;
+  transform: translateX(-50%) translateY(var(--mountain-offset, 0));
+  bottom: 0;
+  width: 120%;
+  max-width: none;
+  pointer-events: none;
+  z-index: 1;
+  will-change: transform;
+}
+
+.mountain-section .text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 767px) {
+  .mountain-image {
+    transform: translateX(-50%) translateY(0);
+    width: 150%;
+    opacity: 0.95;
   }
 }
