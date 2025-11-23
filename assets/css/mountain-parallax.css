@@ -1,0 +1,47 @@
+/* Mountain Parallax Section Styles */
+.mountain-section {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.mountain-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateY(var(--mountain-offset, 0));
+  will-change: transform;
+}
+
+.mountain-section .section__data {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Responsive: Disable parallax on small screens */
+@media screen and (max-width: 768px) {
+  .mountain-image {
+    transform: translateY(0) !important;
+  }
+  
+  .mountain-section {
+    min-height: 200px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mountain-section {
+    min-height: 400px;
+  }
+}
