@@ -283,6 +283,32 @@ img {
 }
 
 /*===== MEDIA QUERIES =====*/
+@media screen and (max-width: 759px) {
+  .hero-section {
+    height: 100vh;
+  }
+
+  .hero-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .home__title {
+    top: 60%;
+    font-size: clamp(2.5rem, 8vw, 3rem);
+  }
+
+  .home__subtitle {
+    top: 72%;
+    font-size: 1.05rem;
+  }
+
+  .section {
+    height: auto;
+    padding: 3rem 0 4rem;
+  }
+}
+
 @media screen and (min-width: 760px) {
   .nav {
     height: 4rem;
