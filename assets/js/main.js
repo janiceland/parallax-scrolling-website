@@ -12,7 +12,14 @@ const showMenu = (toggleId,navId) =>{
 showMenu('nav-toggle','nav-menu')
 
 /*====== RELLAX =====*/
-var rellax = new Rellax('.parallax');
+let rellax;
+if (window.innerWidth >= 768) {
+    rellax = new Rellax('.parallax');
+} else {
+    document.querySelectorAll('.parallax').forEach((layer) => {
+        layer.style.transform = 'translate3d(0, 0, 0)';
+    });
+}
 
 
 /*====== ANIMATE GSAP ======*/
