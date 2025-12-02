@@ -144,7 +144,6 @@ img {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: var(--dark-color);
 }
 
 .mountain-section {
